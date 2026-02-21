@@ -1,3 +1,7 @@
+//git add <filename>
+//git commit -m "message"
+//git push
+
 import java.util.Arrays;
 
 class BasicDSA{
