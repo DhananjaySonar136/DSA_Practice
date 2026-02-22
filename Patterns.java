@@ -232,10 +232,18 @@ public class Patterns {
         }
     }
 
-
+    void ptn14(int rows){
+        for(int i=1;i<=rows;i++){
+            for(char ch='A';ch<'A'+i;ch++){
+                System.out.print(ch+" ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         Patterns p=new Patterns();
-        p.ptn13(5);
+        p.ptn14(5);
+        // p.ptn13(5);
         // p.ptn12(4);
         // p.ptn11(5);
         // p.ptn10(9);
