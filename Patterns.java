@@ -240,9 +240,155 @@ public class Patterns {
             System.out.println();
         }
     }
+
+    void ptn15(int rows){
+
+        for(int i=0;i<rows;i++){
+            for(char ch='A';ch<'A'+(rows-i);ch++){
+                System.out.print(ch);
+            }
+            System.out.println();
+        }
+    }
+
+    void ptn16(int rows){
+        for(int i=0;i<rows;i++){
+            char ch=(char)('A'+i);
+            for(int j=0;j<=i;j++){
+                
+                System.out.print(ch);
+            }
+            System.err.println();
+        }
+    }
+
+    void ptn17(int rows){
+        for(int i=0;i<rows;i++){
+
+            //Space 
+            for(int s=0;s<=rows-i;s++){
+                System.out.print(" ");
+            }
+
+            char ch='A';
+            int breakpoint = (2*i+1)/2;
+            for(int j=1;j<=(2*i+1);j++){
+                System.out.print(ch);
+                if(j<=breakpoint){
+                    ch++;
+                }
+                else{
+                    ch--;
+                } 
+            }
+            System.out.println();
+        }
+    }
+
+
+    /* 
+        E
+        DE
+        CDE
+        BCDE
+        ABCDE
+    */
+    void ptn18(int rows){
+        for(int i=0;i<rows;i++){
+            for(char ch=(char)('E'-i);ch<='E';ch++){
+                System.out.print(ch);
+            }
+            System.out.println();
+        }
+    }
+
+    void ptn19(int rows){
+        for(int i=0;i<rows;i++){
+            for(int j=rows-i-1;j>=0;j--){
+                System.err.print("*");
+            }
+
+            //spaces 
+            for(int k=0;k<i*2;k++){
+                System.out.print(" ");
+            }
+
+            for(int j=rows-i-1;j>=0;j--){
+                System.err.print("*");
+            }
+            System.err.println();
+        }
+        
+        //second half
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<=i;j++){
+                System.err.print("*");
+            }
+
+            //spaces
+            for(int k=0;k<(rows-i-1)*2;k++){
+                System.err.print(" ");
+            }
+
+            for(int j=0;j<=i;j++){
+                System.err.print("*");
+            }
+            System.err.println();
+        }
+    }
+
+    void ptn20(int rows){
+        int spaces= rows;
+        for(int i=0;i<=rows;i++){
+            int stars=i;
+            if(i>(rows/2)) stars=rows-i;
+            //stars
+            
+            for(int j=0;j<=stars;j++){
+                System.err.print("*");
+            }
+
+            //spaces
+            for(int k=0;k<spaces;k++){
+                System.err.print(" ");
+            }
+
+            //next half part infront of previus half part
+            int star=i;
+            if(i>(rows/2)) star=rows-i;
+            //stars
+            
+            for(int j=0;j<=star;j++){
+                System.err.print("*");
+            }
+            System.err.println();
+            if(i<rows/2) spaces-=2;
+            else spaces+=2;
+        }
+    }
+
+    void ptn21(int rows){
+
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<rows;j++){
+                if(i==0 || i==rows-1 || j==0 ||j==rows-1)
+                    System.err.print("*");
+                else
+                    System.err.print(" ");
+            }
+            System.err.println();
+        }
+    }
+
+
+
     public static void main(String[] args) {
         Patterns p=new Patterns();
-        p.ptn14(5);
+        p.ptn21(4);
+        // p.ptn17(5);
+        // p.ptn16(5);
+        //p.ptn15(5);
+        // p.ptn14(5);
         // p.ptn13(5);
         // p.ptn12(4);
         // p.ptn11(5);
