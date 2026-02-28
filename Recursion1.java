@@ -42,7 +42,12 @@ public class Recursion1 {
         System.out.println(n);
     }
 
-
+    
+    void fNto1(int n,int i){
+        if(i>n) return;
+        fNto1(n, i+1);
+        System.out.println(i);
+    }
         public static void main(String[] args) {
         Recursion1 r1=new Recursion1();
         r1.fNto1(10,1);
