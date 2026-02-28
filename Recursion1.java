@@ -48,8 +48,18 @@ public class Recursion1 {
         fNto1(n, i+1);
         System.out.println(i);
     }
+
+    //Sum of numbers from 1 to N
+    void sum1toN(int n,int sum){
+        if(n<1){
+            System.out.println(sum);
+            return;
+        }
+        sum1toN(n-1, sum+n);
+    }
         public static void main(String[] args) {
         Recursion1 r1=new Recursion1();
-        r1.fNto1(10,1);
+        r1.sum1toN(5,0);
+        //r1.fNto1(10,1);
     }
 }
