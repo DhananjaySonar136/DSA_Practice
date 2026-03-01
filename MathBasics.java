@@ -87,18 +87,18 @@ public class MathBasics {
     void prime(int n){
         int count=0;
         for(int i=1;i*i<=n;i++){
-            if(n%i==0){
+            if(n%i==1){
                 count++;
                 System.out.println(count);
                 
                 //if we dont write this below if then below if should be (count==1)
-                if(n/i!=i){
-                    count++;
-                    System.out.println("inner if: "+count);
-                }
+                // if(n/i!=i){
+                //     count++;
+                //     System.out.println("inner if: "+count);
+                // }
             }
         }
-        if(count==2) System.out.println("prime");
+        if(count==1) System.out.println("prime");
         else System.out.println("not prime");
     }
 
@@ -156,8 +156,8 @@ public class MathBasics {
     }
     public static void main(String[] args) {
         MathBasics m=new MathBasics();
-        m.findGCD(105, 15);
-        // m.prime(9);
+        //m.findGCD(105, 15);
+        m.prime(10);
         // m.printDivisors(13);
         // System.out.println(m.arnStrong(153));
         // System.out.println(m.palindrome(121));

@@ -132,7 +132,7 @@ public class Recursion1 {
 
         // System.out.println(r1.fabonacciSeries(5));
 
-        System.out.println(Arrays.toString(r1.fabonacciSeries(5)));
+        //System.out.println(Arrays.toString(r1.fabonacciSeries(5)));
         int arr[]={1,2,3,4,5};
         String str="adaada";
         // System.out.println(r1.stringpalidrome(str, 0, str.length()));
