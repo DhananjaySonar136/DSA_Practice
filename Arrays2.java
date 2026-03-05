@@ -55,6 +55,7 @@ public class Arrays2 {
             System.out.print(arr[i]);
         }
     }
+
     public static void main(String[] args) {
         
         Arrays2 a2=new Arrays2();
