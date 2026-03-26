@@ -384,11 +384,11 @@ public class Patterns {
 
     public static void main(String[] args) {
         Patterns p=new Patterns();
-        p.ptn21(4);
+        // p.ptn21(4);
         // p.ptn17(5);
         // p.ptn16(5);
         //p.ptn15(5);
-        // p.ptn14(5);
+        p.ptn14(5);
         // p.ptn13(5);
         // p.ptn12(4);
         // p.ptn11(5);

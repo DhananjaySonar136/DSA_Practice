@@ -91,7 +91,7 @@ public class MathBasics {
                 count++;
                 System.out.println(count);
                 
-                //if we dont write this below if then below if should be (count==1)
+                //if we dont write this below if then outer if should be (count==1)
                 // if(n/i!=i){
                 //     count++;
                 //     System.out.println("inner if: "+count);

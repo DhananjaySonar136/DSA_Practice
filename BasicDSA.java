@@ -95,6 +95,11 @@ class BasicDSA{
 				System.out.println((char)(i+'A')+":"+beta[i]);
 			}
 		}
+		for(int i=0;i<alpha.length;i++){
+			if(alpha[i]!=0){
+				System.out.println((char)(i+'A')+":"+alpha[i]);
+			}
+		}
 		return alpha;
 	}
 
@@ -268,8 +273,9 @@ class BasicDSA{
 
 	public static void main(String args[]){
 		BasicDSA d=new BasicDSA();
-		d.swap(2, 3);
-		//System.err.println(d.checkPrime(16,2));
+		// d.count("Dhananjay");
+		// d.swap(2, 3);
+		System.err.println(d.checkPrime(17,2));
 		
 		// StringBuilder s1= new StringBuilder("Dhananjay");
 		// System.out.println(s1);
