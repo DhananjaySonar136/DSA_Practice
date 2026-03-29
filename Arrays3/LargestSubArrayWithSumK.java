@@ -1,3 +1,5 @@
+package Arrays3;
+
 class LargestSubArrayWithSumK{
 
     void finSubArray(int arr[],int total){

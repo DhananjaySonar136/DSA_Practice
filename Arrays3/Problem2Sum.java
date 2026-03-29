@@ -3,7 +3,7 @@ import java.util.HashMap;
 
 public class Problem2Sum {
 
-//Brute force Approach
+//Brute force Approach TC=O(n^2)
     // int[] solve(int arr[],int target){
 
     //     for(int i=0;i<arr.length;i++){
@@ -20,7 +20,7 @@ public class Problem2Sum {
     // }
 
 
-//Better Approach
+//Better Approach TC=O(N logN)  SC=O(N)
     int[] solve(int arr[],int target){
 
         //Make hash Map and Substract target-arr[i] and check the difference as key in hashmap present 
