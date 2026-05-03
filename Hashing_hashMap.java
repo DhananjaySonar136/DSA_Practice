@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class Hashing_hashMap {
 
@@ -28,9 +29,16 @@ public class Hashing_hashMap {
             map.put(str.charAt(i), val+1);
         }
 
+        //to iterate from hashmap
+        map.forEach((key,value)->{
+            System.out.println(key +" -> "+value);
+        });
+
+
         System.out.println(map.get('a'));
         System.out.println(map.get('b'));
         System.out.println(map.get('c'));
+        System.out.println(map.get('d'));
         System.out.println(map.get('f'));
         System.out.println(map.get('z'));
 
