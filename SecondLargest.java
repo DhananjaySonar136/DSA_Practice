@@ -9,8 +9,8 @@ public class SecondLargest {
                 secondlargest=largest;
                 largest=arr[i];
             }
-            else if(arr[i]>largest && arr[i]>secondlargest){
-                
+            //else if(arr[i]>largest && arr[i]>secondlargest){
+            else if(arr[i]>secondlargest && arr[i]<largest){  
                 secondlargest=arr[i];
 
             }
@@ -27,7 +27,7 @@ public class SecondLargest {
     }
 
     public static void main(String[] args) {
-        int arr[]={-1,-1,-1};
+        int arr[]={40,40,80};
 
         secondLargest(arr);
     }
