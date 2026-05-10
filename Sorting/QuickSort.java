@@ -2,7 +2,47 @@ package Sorting;
 
 import java.util.Arrays;
 
+
+//Time Complexity 
 public class QuickSort {
+
+    // //method to find pivot position
+    // static int findPivot(int arr[],int low,int high){
+    //     int i=low;
+    //     int j=high;
+    //     int pivot=low;  //here pivot assume is the first element in a array(partition)
+
+    //     //run while loop upto i<j
+    //     while(i<j){
+
+    //         //while arr[i] is less then pivot then i++   and i should go upto high
+    //         while(arr[i]<=arr[pivot] && i<high){
+    //             i++;
+    //         }
+
+    //         //while arr[i] is greater than pivot then j--   and j should go upto low
+    //         while(arr[j]>arr[pivot] && j>low){
+    //             j--;
+    //         }
+
+
+    //         //if i and j stucks then swap them i and j   and again while loop runs 
+    //         if(i<j){
+    //             int temp=arr[i];
+    //             arr[i]=arr[j];
+    //             arr[j]=temp;
+    //         }
+    //     }
+
+    //     //if above while loop condition fails means i exceded j then swap pivot with arr[j]
+    //     //And here the pivot is placed at its proper position
+    //     int temp=arr[j];
+    //     arr[j]=arr[pivot];
+    //     arr[pivot]=temp;
+    
+    //     //and now the pivot will be at j position and then return position of pivot means j
+    //     return j;
+    // }
 
     //method to find pivot position
     static int findPivot(int arr[],int low,int high){
@@ -14,12 +54,12 @@ public class QuickSort {
         while(i<j){
 
             //while arr[i] is less then pivot then i++   and i should go upto high
-            while(arr[i]<=arr[pivot] && i<high){
+            while(arr[i]>=arr[pivot] && i<high){
                 i++;
             }
 
             //while arr[i] is greater than pivot then j--   and j should go upto low
-            while(arr[j]>arr[pivot] && j>low){
+            while(arr[j]<arr[pivot] && j>low){
                 j--;
             }
 
