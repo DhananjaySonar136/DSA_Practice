@@ -88,10 +88,26 @@ public class printN_1_recursion {
         return fib(n-1) + fib(n-2);
     }
 
+    static void printfib(int n){
+        int i=0;
+        int j=1;
+        int sum=0;
+        System.out.println(i+" "+"\n"+j+" ");
+        for(int k=2;k<n;k++){
+            int c=i+j;
+            System.out.println(c+" ");
 
+            if(k==n-1 || k==n-2)
+                sum=sum+c;
+            i=j;
+            j=c;
+        }
+
+        System.out.println("Sum :"+sum);
+    }
     
 
     public static void main(String[] args) {
-        printfib(5);
+        fib(5);
     }
 }
