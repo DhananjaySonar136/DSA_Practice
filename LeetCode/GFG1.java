@@ -1,5 +1,7 @@
 // User function Template for Java
 
+import java.util.Arrays;
+
 class Solution {
     long countTriplets(int n, int sum, long arr[]) {
         

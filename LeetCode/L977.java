@@ -1,3 +1,9 @@
+package LeetCode;
+
+// git pull origin main --rebase
+// git add .
+// git commit -m "message"
+// git push origin main
 class L977 {
     public int[] sortedSquares(int[] arr) {
         
