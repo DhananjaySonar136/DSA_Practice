@@ -22,26 +22,10 @@ public class Hashing {
     // }
 
 
-    void count2(String str){
-        int ch[]=new int[255];
-        ch[0]=0;
-        for(int i=0;i<str.length();i++){
-
-            char c=str.charAt(i);
-
-            ch[c]=ch[c]+1;
-        }
-
-        System.out.println(ch['a']);
-        System.out.println(ch['b']);
-        System.out.println(ch['d']);
-        System.out.println(ch['f']);
-        System.out.println(ch['z']);
-        System.out.println(ch['s']);
-    }
+    
     public static void main(String[] args) {
         Hashing h=new Hashing();
         //h.count("abdfadfz",26);
-        h.count2("abdfadfz");
+       // h.count2("abdfadfz");
     }
 }
