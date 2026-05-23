@@ -9,7 +9,8 @@ class Solution {
         
         long count=0L;
         for(int i=0;i<n-2;i++){
-           
+            int j=i+1;
+            int k=n-1;
             
             while(j<k){
                 
